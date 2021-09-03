@@ -5,7 +5,11 @@ module.exports = (req, res, next) => {
   if(!token){
     res.status(401).json("Token please!")
   }else{
-
+    jwt.verify(token,"keepitsafe",(err,decoded)=>{
+      if(err){
+        res.status(401).json("Token is bad " + err.message)
+      }
+    })
   }
 
 };
