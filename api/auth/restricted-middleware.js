@@ -1,12 +1,12 @@
 const jwt = require("jsonwebtoken")
-const {} = require("../../config/secrets.js")
+const {jwtSecret} = require("../../config/secrets.js")
 
 module.exports = (req, res, next) => {
   const token = req.headers.authorization //this pulls the token from the req
   if(!token){
     res.status(401).json("Token please!")
   }else{
-    jwt.verify(token,"keepitsafe",(err,decoded)=>{
+    jwt.verify(token,jwtSecret,(err,decoded)=>{
       if(err){
         res.status(401).json("Token is bad " + err.message)
       }
