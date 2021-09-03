@@ -50,7 +50,7 @@ function makeToken(user){
   const options = {
     expiresIn: "500s"
   }
-  return jwt.sign(payload,"keepitsafe",options)
+  return jwt.sign(payload,jwtSecret,options)
 }
 
 
