@@ -1,1 +1,1 @@
-const jwtSecret = process.env.JWT_SECRET || "keepitsecret"
+const jwtSecret = process.env.JWT_SECRET || "keepitsafe"
