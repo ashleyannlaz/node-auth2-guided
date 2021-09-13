@@ -9,11 +9,11 @@ Guided project for **Node Auth 2** Module.
 
 ## Project Setup
 
-- [ ] clone this repository.
-- [ ] move inside the project.
-- [ ] type`npm i` to download dependencies.
-- [ ] type `npx knex migrate:latest` to run the migrations.
-- [ ] type `npx knex seed:run` to seed the db.
-- [ ] type `npm run server` to start the API.
+- [x] clone this repository.
+- [x] move inside the project.
+- [x] type`npm i` to download dependencies.
+- [x] type `npx knex migrate:latest` to run the migrations.
+- [x] type `npx knex seed:run` to seed the db.
+- [x] type `npm run server` to start the API.
 
 Please follow along as the instructor adds support for `JSON Web Tokens (JWT)` to the API.
